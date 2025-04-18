@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahii's Clothing Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assignment1c.css">
+</head>
+<body class="font-sans bg-white text-gray-800">
+  <body style="background-image: url('stylesss/background.jpg'); background-size: cover; background-position: center;">
+
+  <!-- Header -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex flex-wrap justify-between items-center p-4">
+      <a href="assignment1c.html">
+        <img src="stylesss/mahii.png" alt="Store Logo" class="w-28" />
+      </a>
+      <nav class="space-x-4 text-sm">
+        <a href="assignment1c.html" class="hover:text-gray-300">Home</a>
+        <a href="a3shop.html" class="hover:text-gray-300">Shop</a>
+        <a href="a3blog.html" class="hover:text-gray-300">Blog</a>
+        <a href="a3about.html" class="hover:text-gray-300">About</a>
+        <a href="a3contact.html" class="hover:text-gray-300">Contact</a>
+        <a href="a3cart.html" class="hover:text-gray-300">Cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 bg-gray-100">
+    <h1 class="text-4xl font-bold mb-4">Welcome to Mahii's Clothing Store</h1>
+    <p class="mb-6 text-lg">Your style, our passion. Discover the latest trends!</p>
+    <a href="a3shop.html" class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800">Shop Now</a>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-semibold mb-8 text-center">Featured Products</h2>
+      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Product -->
+        <article class="text-center shadow-lg p-4 border rounded">
+          <img src="stylesss/product1.jpg" alt="Product 1" class="mx-auto mb-4" />
+          <h3 class="text-lg font-semibold mb-2">Stylish Jacket</h3>
+          <p class="mb-2">RS2559.99</p>
+          <a href="a3shop.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</a>
+        </article>
+
+        <!-- Repeat for other products -->
+        <article class="text-center shadow-lg p-4 border rounded">
+          <img src="stylesss/product2.jpg" alt="Product 2" class="mx-auto mb-4" />
+          <h3 class="text-lg font-semibold mb-2">Casual T-shirt</h3>
+          <p class="mb-2">RS519.99</p>
+          <a href="a3shop.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</a>
+        </article>
+
+        <article class="text-center shadow-lg p-4 border rounded">
+          <img src="stylesss/product3.jpg" alt="Product 3" class="mx-auto mb-4" />
+          <h3 class="text-lg font-semibold mb-2">Elegant Dress</h3>
+          <p class="mb-2">RS5669.99</p>
+          <a href="a3shop.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2025 Mahii's Clothing Store. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Create "Scroll to Top" and "Scroll to Bottom" buttons
+    const scrollBtnContainer = document.createElement('div');
+    scrollBtnContainer.style.position = 'fixed';
+    scrollBtnContainer.style.bottom = '20px';
+    scrollBtnContainer.style.right = '20px';
+    scrollBtnContainer.style.display = 'flex';
+    scrollBtnContainer.style.flexDirection = 'column';
+    scrollBtnContainer.style.gap = '10px';
+    scrollBtnContainer.style.zIndex = '999';
+  
+    // Scroll to Top button
+    const upBtn = document.createElement('button');
+    upBtn.textContent = '⬆️ Top';
+    upBtn.style.padding = '10px';
+    upBtn.style.borderRadius = '8px';
+    upBtn.style.backgroundColor = '#1f2937'; // Tailwind gray-800
+    upBtn.style.color = 'white';
+    upBtn.style.border = 'none';
+    upBtn.style.cursor = 'pointer';
+  
+    // Scroll to Bottom button
+    const downBtn = document.createElement('button');
+    downBtn.textContent = '⬇️ Bottom';
+    downBtn.style.padding = '10px';
+    downBtn.style.borderRadius = '8px';
+    downBtn.style.backgroundColor = '#1f2937'; // Tailwind gray-800
+    downBtn.style.color = 'white';
+    downBtn.style.border = 'none';
+    downBtn.style.cursor = 'pointer';
+  
+    // Add click functionality
+    upBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    downBtn.addEventListener('click', () => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }));
+  
+    // Add buttons to the container
+    scrollBtnContainer.appendChild(upBtn);
+    scrollBtnContainer.appendChild(downBtn);
+  
+    // Add the container to the body
+    document.body.appendChild(scrollBtnContainer);
+  </script>
+  
+</body>
+</html>
