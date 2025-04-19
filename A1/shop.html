@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop - My E-Commerce</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>My E-Commerce</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="product.html">Product</a>
+      <a href="yourcart.html">Cart</a>
+      <a href="contactus.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Section 1: Hero -->
+    <section class="hero">
+      <h2>Shop Our Best Deals</h2>
+      <p>From top tech to must-have accessories — find everything you need!</p>
+    </section>
+
+    <!-- Section 2: Categories Filter -->
+    <section class="categories" style="margin: 20px 0; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd;">
+      <h2 style="font-size: 1.5em; color: #333;">Shop by Category</h2>
+      <ul style="list-style: none; padding: 0; display: flex; gap: 15px;">
+      <li><a href="#" style="text-decoration: none; color: #007bff;">Electronics</a></li>
+      <li><a href="#" style="text-decoration: none; color: #007bff;">Fashion</a></li>
+      <li><a href="#" style="text-decoration: none; color: #007bff;">Home & Kitchen</a></li>
+      <li><a href="#" style="text-decoration: none; color: #007bff;">Accessories</a></li>
+      </ul>
+    </section>
+
+    <!-- Section 3: Product Grid -->
+    <section class="featured" style="margin: 20px 0; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd;">
+      <h2 style="font-size: 1.5em; color: #333;">Featured Products</h2>
+      <div class="product-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
+      <div class="product-card" style="padding: 10px; border: 1px solid #ddd; text-align: center;">
+        <h3 style="font-size: 1.2em; color: #333;">Wireless Earbuds</h3>
+        <p class="price" style="color: #007bff; font-weight: bold;">$29.99</p>
+      </div>
+      <div class="product-card" style="padding: 10px; border: 1px solid #ddd; text-align: center;">
+        <h3 style="font-size: 1.2em; color: #333;">Smart Watch</h3>
+        <p class="price" style="color: #007bff; font-weight: bold;">$49.99</p>
+      </div>
+      <div class="product-card" style="padding: 10px; border: 1px solid #ddd; text-align: center;">
+        <h3 style="font-size: 1.2em; color: #333;">Yoga Mat</h3>
+        <p class="price" style="color: #007bff; font-weight: bold;">$19.99</p>
+      </div>
+      <div class="product-card" style="padding: 10px; border: 1px solid #ddd; text-align: center;">
+        <h3 style="font-size: 1.2em; color: #333;">Backpack</h3>
+        <p class="price" style="color: #007bff; font-weight: bold;">$34.99</p>
+      </div>
+      <div class="product-card" style="padding: 10px; border: 1px solid #ddd; text-align: center;">
+        <h3 style="font-size: 1.2em; color: #333;">Bluetooth Speaker</h3>
+        <p class="price" style="color: #007bff; font-weight: bold;">$24.99</p>
+      </div>
+      <div class="product-card" style="padding: 10px; border: 1px solid #ddd; text-align: center;">
+        <h3 style="font-size: 1.2em; color: #333;">Desk Lamp</h3>
+        <p class="price" style="color: #007bff; font-weight: bold;">$14.99</p>
+      </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Limited Time Offer -->
+    <section class="testimonials" style="margin: 20px 0; padding: 10px; background-color: #fff3cd; border: 1px solid #ffeeba;">
+      <h2 style="font-size: 1.5em; color: #856404;">🔥 Limited Time Offer</h2>
+      <blockquote style="font-style: italic; color: #856404;">Save 20% on all accessories. Hurry, ends soon!</blockquote>
+    </section>
+
+    <!-- Section 5: Newsletter Signup -->
+    <section class="newsletter" style="margin: 20px 0; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd;">
+      <h2 style="font-size: 1.5em; color: #333;">Never Miss a Deal</h2>
+      <p style="color: #555;">Join our newsletter for weekly updates and special promotions.</p>
+      <form style="display: flex; gap: 10px;">
+      <input type="email" placeholder="Your email address" required style="flex: 1; padding: 5px; border: 1px solid #ddd;"/>
+      <button type="submit" style="padding: 5px 10px; background-color: #007bff; color: #fff; border: none; cursor: pointer;">Subscribe</button>
+      </form>
+    </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My E-Commerce Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>

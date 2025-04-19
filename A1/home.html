@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - My E-Commerce</title>
+</head>
+<body style="background-color: #f3f4f6; color: #1f2937; font-family: Arial, sans-serif; line-height: 1.6; padding-top: 64px;">
+  <!-- Header -->
+  <header style="background-color: #1f2937; color: white; padding: 20px 0; text-align: center; position: fixed; top: 0; width: 100%; z-index: 10;">
+    <h1 style="font-size: 1.5rem; font-weight: bold;">My E-Commerce</h1>
+    <nav style="margin-top: 16px;">
+      <a href="home.html" style="color: white; font-weight: bold; text-decoration: none; margin: 0 16px; font-size: 1.125rem; transition: color 0.3s;">Home</a>
+      <a href="shop.html" style="color: white; font-weight: bold; text-decoration: none; margin: 0 16px; font-size: 1.125rem; transition: color 0.3s;">Shop</a>
+      <a href="product.html" style="color: white; font-weight: bold; text-decoration: none; margin: 0 16px; font-size: 1.125rem; transition: color 0.3s;">Product</a>
+      <a href="yourcart.html" style="color: white; font-weight: bold; text-decoration: none; margin: 0 16px; font-size: 1.125rem; transition: color 0.3s;">Cart</a>
+      <a href="contactus.html" style="color: white; font-weight: bold; text-decoration: none; margin: 0 16px; font-size: 1.125rem; transition: color 0.3s;">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main style="max-width: 1200px; margin: 0 auto; padding: 0 16px;">
+    <!-- Hero Section -->
+    <section style="background-color: white; padding: 32px 16px; text-align: center; margin-bottom: 64px; margin-top: 32px;">
+      <h2 style="font-size: 2.25rem; font-weight: bold; margin-bottom: 12px;">Welcome to My E-Commerce Store</h2>
+      <p style="font-size: 1.125rem; color: #4b5563;">Best products. Great deals. All in one place.</p>
+    </section>
+
+    <!-- Featured Products -->
+    <section style="margin-bottom: 48px;">
+      <h2 style="font-size: 1.875rem; font-weight: bold; text-align: center; margin-bottom: 32px;">Featured Products</h2>
+      <div style="display: flex; justify-content: center; gap: 32px;">
+        <div style="background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 256px; text-align: center; transition: transform 0.3s, font-size 0.3s;">Product A</div>
+        <div style="background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 256px; text-align: center; transition: transform 0.3s, font-size 0.3s;">Product B</div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section style="margin-bottom: 48px;">
+      <h2 style="font-size: 1.875rem; font-weight: bold; text-align: center; margin-bottom: 32px;">Shop by Category</h2>
+      <ul style="display: flex; justify-content: center; gap: 32px; list-style: none; padding: 0;">
+        <li style="background-color: white; padding: 16px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s; cursor: pointer;">Electronics</li>
+        <li style="background-color: white; padding: 16px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s; cursor: pointer;">Fashion</li>
+        <li style="background-color: white; padding: 16px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s; cursor: pointer;">Home Goods</li>
+      </ul>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="margin-bottom: 48px;">
+      <h2 style="font-size: 1.875rem; font-weight: bold; text-align: center; margin-bottom: 32px;">What Customers Say</h2>
+      <blockquote style="background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 672px; margin: 0 auto; text-align: center; font-style: italic;">
+        "Great products at amazing prices!"
+      </blockquote>
+    </section>
+
+    <!-- Newsletter -->
+    <section style="background-color: white; padding: 32px 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 768px; margin: 0 auto 48px;">
+      <h2 style="font-size: 1.875rem; font-weight: bold; text-align: center; margin-bottom: 16px;">Stay Updated</h2>
+      <p style="text-align: center; margin-bottom: 24px;">Subscribe to our newsletter for the latest offers.</p>
+      <form style="display: flex; flex-direction: column; gap: 16px;">
+        <input type="email" placeholder="Your email" style="flex-grow: 1; padding: 8px 16px; border: 1px solid #d1d5db; border-radius: 4px; outline: none;"/>
+        <button type="submit" style="background-color: #f97316; color: white; font-weight: bold; padding: 8px 24px; border: none; border-radius: 4px; transition: background-color 0.3s;">
+          Subscribe
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background-color: #1f2937; color: white; text-align: center; padding: 20px 0; width: 100%;">
+    <p>&copy; 2025 My E-Commerce Store</p>
+  </footer>
+
+  <!-- Hover effects -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add hover effects for navigation links
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+          link.style.color = '#fb923c';
+        });
+        link.addEventListener('mouseleave', () => {
+          link.style.color = 'white';
+        });
+      });
+
+      // Add hover effects for product cards
+      const productCards = document.querySelectorAll('section:nth-of-type(2) div');
+      productCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          card.style.transform = 'scale(1.05)';
+          card.style.fontSize = '1.125rem';
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'scale(1)';
+          card.style.fontSize = '1rem';
+        });
+      });
+
+      // Add hover effects for category items
+      const categoryItems = document.querySelectorAll('section:nth-of-type(3) li');
+      categoryItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+          item.style.boxShadow = '0 10px 15px rgba(0, 0, 0, 0.1)';
+        });
+        item.addEventListener('mouseleave', () => {
+          item.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+        });
+      });
+
+      // Add hover effect for subscribe button
+      const subscribeBtn = document.querySelector('section:last-of-type button');
+      subscribeBtn.addEventListener('mouseenter', () => {
+        subscribeBtn.style.backgroundColor = '#ea580c';
+      });
+      subscribeBtn.addEventListener('mouseleave', () => {
+        subscribeBtn.style.backgroundColor = '#f97316';
+      });
+    });
+  </script>
+</body>
+</html>

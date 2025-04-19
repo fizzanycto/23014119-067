@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop - My E-Commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed pt-16">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white py-5 text-center fixed top-0 w-full z-10">
+    <h1 class="text-2xl font-bold">My E-Commerce</h1>
+    <nav class="mt-4">
+      <a href="index.html" class="text-white no-underline mx-4 text-lg hover:text-orange-400 transition-colors">Home</a>
+      <a href="shop.html" class="text-orange-400 no-underline mx-4 text-lg hover:text-orange-300 transition-colors">Shop</a>
+      <a href="product.html" class="text-white no-underline mx-4 text-lg hover:text-orange-400 transition-colors">Product</a>
+      <a href="cart.html" class="text-white no-underline mx-4 text-lg hover:text-orange-400 transition-colors">Cart</a>
+      <a href="contact.html" class="text-white no-underline mx-4 text-lg hover:text-orange-400 transition-colors">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 pb-12">
+    <!-- Section 1: Hero -->
+    <section class="bg-white py-8 px-4 text-center mb-8 rounded-lg shadow">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-3">Shop Our Best Deals</h2>
+      <p class="text-base sm:text-lg text-gray-600">From top tech to must-have accessories — find everything you need!</p>
+    </section>
+
+    <!-- Section 2: Categories Filter -->
+    <section class="bg-white p-6 rounded-lg shadow-md mb-12">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">Shop by Category</h2>
+      <ul class="flex flex-wrap justify-center gap-2 sm:gap-4">
+        <li><a href="#" class="bg-gray-100 hover:bg-orange-100 px-4 sm:px-6 py-2 rounded-full transition-colors">Electronics</a></li>
+        <li><a href="#" class="bg-gray-100 hover:bg-orange-100 px-4 sm:px-6 py-2 rounded-full transition-colors">Fashion</a></li>
+        <li><a href="#" class="bg-gray-100 hover:bg-orange-100 px-4 sm:px-6 py-2 rounded-full transition-colors">Home & Kitchen</a></li>
+        <li><a href="#" class="bg-gray-100 hover:bg-orange-100 px-4 sm:px-6 py-2 rounded-full transition-colors">Accessories</a></li>
+      </ul>
+    </section>
+
+    <!-- Section 3: Product Grid -->
+    <section class="mb-12">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center">Featured Products</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-lg sm:text-xl font-bold mb-2">Wireless Earbuds</h3>
+          <p class="price text-orange-500 font-semibold">$29.99</p>
+        </div>
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-lg sm:text-xl font-bold mb-2">Smart Watch</h3>
+          <p class="price text-orange-500 font-semibold">$49.99</p>
+        </div>
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-lg sm:text-xl font-bold mb-2">Yoga Mat</h3>
+          <p class="price text-orange-500 font-semibold">$19.99</p>
+        </div>
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-lg sm:text-xl font-bold mb-2">Backpack</h3>
+          <p class="price text-orange-500 font-semibold">$34.99</p>
+        </div>
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-lg sm:text-xl font-bold mb-2">Bluetooth Speaker</h3>
+          <p class="price text-orange-500 font-semibold">$24.99</p>
+        </div>
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-lg sm:text-xl font-bold mb-2">Desk Lamp</h3>
+          <p class="price text-orange-500 font-semibold">$14.99</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Limited Time Offer -->
+    <section class="bg-orange-100 border-l-4 border-orange-500 p-4 sm:p-6 mb-12">
+      <h2 class="text-xl sm:text-2xl font-bold mb-2">🔥 Limited Time Offer</h2>
+      <blockquote class="text-base sm:text-lg">Save 20% on all accessories. Hurry, ends soon!</blockquote>
+    </section>
+
+    <!-- Section 5: Newsletter Signup -->
+    <section class="bg-white p-4 sm:p-6 rounded-lg shadow-md max-w-lg sm:max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-center">Never Miss a Deal</h2>
+      <p class="text-center mb-4 sm:mb-6">Join our newsletter for weekly updates and special promotions.</p>
+      <form class="flex flex-col sm:flex-row gap-2 sm:gap-4">
+        <input type="email" placeholder="Your email address" required 
+               class="flex-grow px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-400"/>
+        <button type="submit" 
+                class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 sm:px-6 rounded transition-colors"></button>
+          Subscribe
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-5 w-full">
+    <p>&copy; 2025 My E-Commerce Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - My E-Commerce</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>My E-Commerce</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="product.html">Product</a>
+      <a href="yourcart.html" class="active">Cart</a>
+      <a href="contactus.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Section 1: Cart Heading -->
+    <section class="hero card" style="text-align: center; padding: 15px; border-radius: 15px; background-color: #ffffff; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <h2>Your Shopping Cart</h2>
+      <p>Check out your items, apply promo codes, and proceed to secure checkout.</p>
+    </section>
+
+    <!-- Section 2: Cart Items -->
+    <section class="cart-items card" style="padding: 20px; border-radius: 15px; background-color: #ffffff; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <h2>Items in Your Cart</h2>
+      <div class="cart-list">
+      <div class="cart-item" style="display: flex; align-items: center; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 10px; padding: 10px;">
+        <img src="../download.jpg" alt="Wireless Bluetooth Earbuds" class="cart-item-image" style="width: 80px; height: 80px; border-radius: 10px; margin-right: 15px;"/>
+        <div class="cart-item-details">
+        <h3>Wireless Bluetooth Earbuds</h3>
+        <p class="quantity">Quantity: 1</p>
+        <p class="price">$29.99</p>
+        <button class="remove-item-btn" style="padding: 5px 10px; border-radius: 5px; background-color: #ff4d4d; color: white; border: none;">Remove</button>
+        </div>
+      </div>
+      <div class="cart-item" style="display: flex; align-items: center; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 10px; padding: 10px;">
+        <img src="../download (1).jpg" alt="Smart Watch" class="cart-item-image" style="width: 80px; height: 80px; border-radius: 10px; margin-right: 15px;"/>
+        <div class="cart-item-details">
+        <h3>Smart Watch</h3>
+        <p class="quantity">Quantity: 1</p>
+        <p class="price">$49.99</p>
+        <button class="remove-item-btn" style="padding: 5px 10px; border-radius: 5px; background-color: #ff4d4d; color: white; border: none;">Remove</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Promo Code -->
+    <section class="promo-code card" style="text-align: left; padding: 20px; border-radius: 10px; background-color: #f9f9f9; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <h2>Have a Promo Code?</h2>
+      <form class="promo-form">
+      <div style="display: flex; align-items: center; gap: 10px; width: 100%;"></div>
+        <input type="text" placeholder="Enter promo code" required style="padding: 10px; border-radius: 5px; border: 1px solid #ddd; flex: 1; width: 85%;"/>
+        <button type="submit" class="btn-apply" style="padding: 10px 20px; border-radius: 5px; background-color: #4CAF50; color: white; border: none;">Apply</button>
+      </div>
+      </div>
+      </form>
+    </section>
+
+    <!-- Section 4: Order Summary -->
+    <section class="order-summary" style="padding: 20px; border-radius: 15px; background-color: #ffffff; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <h2 style="text-align: left; font-size: 1.5em; margin-bottom: 15px;">Order Summary</h2>
+      <div class="summary-details" style="padding: 15px; border-radius: 10px; background-color: #f9f9f9;">
+      <p style="margin: 10px 0; display: flex; justify-content: space-between; font-weight: bolder;">
+        <strong>Subtotal:</strong> <strong>$79.98</strong>
+      </p>
+      <p style="margin: 10px 0; display: flex; justify-content: space-between; font-weight: bolder;">
+        <strong>Shipping:</strong> <strong><b>$4.99</b></strong>
+      </p>
+      </p>
+      <p style="margin: 10px 0; font-size: 1.2em; display: flex; justify-content: space-between; font-weight: bolder;">
+        <strong>Total:</strong> <strong style="color: #f58224;">$84.97</strong>
+      </p>
+      </div>
+    </section>
+
+    <!-- Section 5: Checkout Action -->
+    <section class="checkout-action" style="text-align: center; padding: 20px; border-radius: 10px; background-color: #f9f9f9; margin: 10px;">
+      <h2>Ready to Checkout?</h2>
+      <p>Secure your order and complete your purchase.</p>
+      <button class="btn-checkout" style="padding: 10px 20px; border-radius: 5px; background-color: #f58224; color: white; border: none;">Proceed to Checkout</button></section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My E-Commerce Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>

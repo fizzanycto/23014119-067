@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - My E-Commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed pt-16">
+<header class="bg-gray-800 text-white py-5 text-center fixed top-0 w-full z-10">
+    <h1 class="text-2xl font-bold">My E-Commerce</h1>
+    <nav class="mt-4 flex flex-wrap justify-center">
+        <a href="index.html" class="text-white font-bold no-underline mx-2 sm:mx-4 text-sm sm:text-lg hover:text-orange-400 transition-colors">Home</a>
+        <a href="shop.html" class="text-white font-bold no-underline mx-2 sm:mx-4 text-sm sm:text-lg hover:text-orange-400 transition-colors">Shop</a>
+        <a href="product.html" class="text-white font-bold no-underline mx-2 sm:mx-4 text-sm sm:text-lg hover:text-orange-400 transition-colors">Product</a>
+        <a href="cart.html" class="text-white font-bold no-underline mx-2 sm:mx-4 text-sm sm:text-lg hover:text-orange-400 transition-colors">Cart</a>
+        <a href="contact.html" class="text-white font-bold no-underline mx-2 sm:mx-4 text-sm sm:text-lg hover:text-orange-400 transition-colors">Contact</a>
+    </nav>
+</header>
+
+<main class="container mx-auto px-4">
+  <!-- Section 1: Hero -->
+  <section class="bg-white py-8 px-4 text-center mb-16 mt-8">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-3">Welcome to My E-Commerce Store</h2>
+    <p class="text-base sm:text-lg text-gray-600">Best products. Great deals. All in one place.</p>
+  </section>
+
+  <!-- Section 2: Featured Products -->
+  <section class="mb-12">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">Featured Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+      <div class="bg-white p-6 rounded-lg shadow-md text-center hover:scale-105 hover:text-lg transition-transform duration-300">Product A</div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center hover:scale-105 hover:text-lg transition-transform duration-300">Product B</div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center hover:scale-105 hover:text-lg transition-transform duration-300">Product C</div>
+    </div>
+  </section>
+
+  <!-- Section 3: Categories -->
+  <section class="mb-12">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">Shop by Category</h2>
+    <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4 list-none">
+      <li class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow cursor-pointer text-center">Electronics</li>
+      <li class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow cursor-pointer text-center">Fashion</li>
+      <li class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow cursor-pointer text-center">Home Goods</li>
+    </ul>
+  </section>
+
+  <!-- Section 4: Testimonials -->
+  <section class="mb-12">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">What Customers Say</h2>
+    <blockquote class="bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto text-center italic">
+      "Great products at amazing prices!"
+    </blockquote>
+  </section>
+
+  <!-- Section 5: Newsletter -->
+  <section class="bg-white py-8 px-6 rounded-lg shadow-md max-w-3xl mx-auto mb-12">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-4">Stay Updated</h2>
+    <p class="text-center mb-6">Subscribe to our newsletter for the latest offers.</p>
+    <form class="flex flex-col sm:flex-row gap-4">
+      <input type="email" placeholder="Your email" class="flex-grow px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-400" />
+      <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded transition-colors">
+        Subscribe
+      </button>
+    </form>
+  </section>
+</main>
+
+<footer class="bg-gray-800 text-white text-center py-5 w-full">
+  <p>&copy; 2025 My E-Commerce Store</p>
+</footer>
+</body>
+</html>

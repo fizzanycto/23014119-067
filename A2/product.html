@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product - My E-Commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed pt-16">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white py-5 text-center fixed top-0 w-full z-10 mb-16">
+    <h1 class="text-2xl font-bold">My E-Commerce</h1>
+    <nav class="mt-4 flex flex-wrap justify-center"></nav>
+      <a href="index.html" class="text-white no-underline mx-4 text-lg hover:text-orange-400 transition-colors">Home</a>
+      <a href="shop.html" class="text-white no-underline mx-4 text-lg hover:text-orange-400 transition-colors">Shop</a>
+      <a href="product.html" class="text-orange-400 no-underline mx-4 text-lg hover:text-orange-300 transition-colors">Product</a>
+      <a href="cart.html" class="text-white no-underline mx-4 text-lg hover:text-orange-400 transition-colors">Cart</a>
+      <a href="contact.html" class="text-white no-underline mx-4 text-lg hover:text-orange-400 transition-colors">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4"></main>
+    <!-- Section 1: Product Hero -->
+    <section class="bg-white py-8 px-4 text-center mb-8 rounded-lg shadow">
+      <h2 class="text-4xl font-bold mb-3">Wireless Bluetooth Earbuds</h2>
+      <p class="text-lg text-gray-600">Experience powerful sound, all-day comfort, and true wireless freedom.</p>
+    </section>
+
+    <!-- Section 2: Product Display -->
+    <section class="mb-12">
+      <div class="flex flex-col md:flex-row gap-8">
+        <!-- Product Image -->
+        <div class="bg-white p-6 rounded-lg shadow-md flex-1 flex justify-center">
+          <img src="../download.jpg" alt="Wireless Bluetooth Earbuds" class="max-h-96 rounded-lg object-contain"/>
+        </div>
+        <!-- Product Details -->
+        <div class="bg-white p-6 rounded-lg shadow-md flex-1">
+          <h3 class="text-2xl font-bold mb-4">Product Details</h3>
+          <ul class="space-y-3 mb-6">
+            <li><strong class="font-semibold">Price:</strong> $29.99</li>
+            <li><strong class="font-semibold">Color:</strong> Black</li>
+            <li><strong class="font-semibold">Battery Life:</strong> 20 hours with case</li>
+            <li><strong class="font-semibold">Water Resistance:</strong> IPX5</li>
+            <li><strong class="font-semibold">Availability:</strong> <span class="text-green-600">In Stock</span></li>
+          </ul>
+          <button class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded transition-colors">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Full Description -->
+    <section class="bg-white p-6 rounded-lg shadow-md mb-12">
+      <h2 class="text-3xl font-bold mb-4">Description</h2>
+      <p class="text-lg">
+        These earbuds deliver stunning clarity with deep bass, hands-free calling, and an ergonomic fit for all-day wear. Perfect for fitness, commuting, and entertainment. Includes a compact charging case for on-the-go use.
+      </p>
+    </section>
+
+    <!-- Section 4: Customer Reviews -->
+    <section class="bg-white p-6 rounded-lg shadow-md mb-12">
+      <h2 class="text-3xl font-bold mb-6">Customer Reviews</h2>
+      <div class="space-y-6">
+        <article class="border-b pb-4">
+          <h4 class="text-xl font-semibold">⭐⭐⭐⭐⭐ Alex T.</h4>
+          <p class="text-gray-700 mt-2">"Incredible value! The sound is surprisingly good for the price."</p>
+        </article>
+        <article class="border-b pb-4">
+          <h4 class="text-xl font-semibold">⭐⭐⭐⭐ Maria L.</h4>
+          <p class="text-gray-700 mt-2">"Battery lasts through long workouts. Super comfy and stable fit."</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 5: You May Also Like -->
+    <section class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold mb-6 text-center">Related Products</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-bold mb-2">Smart Watch</h3>
+          <p class="text-lg font-semibold text-orange-500">$49.99</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-bold mb-2">Wireless Charger</h3>
+          <p class="text-lg font-semibold text-orange-500">$19.99</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-5 w-full">
+    <p>&copy; 2025 My E-Commerce Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
